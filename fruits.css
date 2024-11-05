@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth
+} 
+h1{
+  text-align: center;
+  padding: 25px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: green;
+}
+.nav-products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-products li{
+  display: inline-block;
+  margin: 25px;
+}
+.nav-products li a{
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-bottom: solid 3px green;
+  color: green;
+  transition: 0.6s
+}
+.nav-products li a:hover{
+  background: green;
+  color: snow;
+  border: none;
+  border-radius: 15px;
+  padding: 7px;
+  transition: 0.6s;
+}
+.fruits{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+}
+.img-fruit{
+  margin: 15px;
+  border: solid 3px #eee;
+  transition: 0.6s;
+}
+.img-fruit:hover{
+  transform: scale(1.1);
+  transition: 0.6s;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 5px 5px 5px green;
+}
+.text-fur{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: green;
+  font-size: 22px;
+}
+.price-fur{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 26px;
+  color: darkred;
+}
+.btn-fur{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  border: none;
+  background: green;
+  color: snow;
+  border-radius: 12px;
+  padding: 5px;
+  transition: 0.6s
+}
+.btn-fur:hover{
+  transition: 0.6s;
+  color: green;
+  border: solid 3px green;
+  background: transparent;
+}
+.fru{
+  margin: 15px;
+  width: 200px;
+}
+
+@media (max-width: 768px){
+  .fruits{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  .nav-products li a{
+    font-size: 22px
+  }
+}
